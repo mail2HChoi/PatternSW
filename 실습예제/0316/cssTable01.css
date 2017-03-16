@@ -1,0 +1,152 @@
+@CHARSET "EUC-KR";
+
+.container {
+    width: 500px;
+    margin: 0 auto; 
+}
+
+	/* UNIVERSAL TABLE ATTRIBUTES  */
+	
+	table {
+		font-family: "Lato","sans-serif";	}		/* added custom font-family  */
+
+	table caption {
+		padding-bottom: 1em;		}
+
+	
+/* --------------TABLE ONE ATTRIBUTES-----------------  */
+
+	table.one {									 
+	margin-bottom: 3em;	
+	border-collapse:collapse;
+	display: inline-block;
+	margin-right: 3em;		}	
+
+	
+	table.one td {								
+	text-align: center;     
+	width: 10em;					
+	padding: 1em; 		}		
+
+
+	table.one th {								
+	text-align: center;					
+	padding: 1em;
+	background-color: #e8503a;			
+	color: white;		}			      
+
+	table.one tr {	
+	height: 1em;	}
+
+	table.one tr:nth-child(even) {			
+    background-color: #eee;		}
+
+	table.one tr:nth-child(odd) {			
+	background-color:#fff;		}
+
+
+/* -----------------TABLE TWO ATTRIBUTES-----------------  */
+
+	table.two {									 
+	margin-bottom: 3em;	
+	border-collapse:collapse;
+	display: inline-block;
+	margin-right: 3em;		}	
+
+	
+	table.two td {								
+	text-align: center;     
+	width: 10em;
+	border: 0.1em #c2c2c2 solid;					
+	padding: 1em; 		}		
+
+
+	table.two th {								
+	text-align: center;					
+	padding: 1em;
+	background-color: black;			
+	color: white;		}			      
+
+	table.two tr {	
+	height: 1em;	}
+
+
+/* -----------------TABLE THREE ATTRIBUTES-----------------  */
+
+	table.three {									 
+	margin-bottom: 3em;	
+	border-collapse:collapse;
+	display: inline-block;
+	margin-right: 3em;		}	
+
+	
+	table.three td {								
+	text-align: left;     
+	width: 10em;
+	border: 0.1em #c2c2c2 solid;					
+	padding: 1em; 
+	background-color: #fff79a;		}		
+
+
+	table.three th {								
+	text-align: left;					
+	padding: 1em;
+	border: 0.1em #c2c2c2 solid;
+	background-color: #e7e7e7;			
+	color: black;		}			      
+
+	table.three tr {	
+	height: 0.8em;	}
+
+
+/* -----------------TABLE FOUR ATTRIBUTES-----------------  */
+
+	table.four {									 
+	margin-left: 2em;
+	border-collapse:collapse;
+	display: inline-block;
+	margin-right: 3em;		}	
+
+	
+	table.four td {								
+	text-align: left;     
+	width: 16em;
+	border: 0.1em #414141 dashed;					
+	padding: 1em; 	}		
+
+
+	table.four th {								
+	text-align: left;					
+	padding: 1em;
+	border: 0.1em #414141 dashed;		
+	color: black;		}			      
+
+	table.four tr {	
+	height: 0.8em;	}
+
+/* -----------------TABLE FIVE ATTRIBUTES-----------------  */
+
+	table.five {									 
+	border-collapse:collapse;
+	display: inline-block;
+	margin-right: 3em;		}	
+
+	
+	table.five td {								
+	text-align: center;     
+	width: 16em;
+	border: 0.15em #00ac24 dotted;				
+	padding: 1em;
+	background-color: #b6ffc5; 	}		
+
+
+	table.five th {								
+	text-align: center;					
+	padding: 1em;
+	border: 0.15em #00ac24 dotted;		
+	color: black;		}			      
+
+	table.five tr {	
+	height: 1em;	}
+
+	</style>
