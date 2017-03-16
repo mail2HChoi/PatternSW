@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+
+</head>
+
+<body>
+    <form name="inputform" action="">
+    <table cellpadding="5">
+    <tr>
+    <td align="right">
+       사용자명 : </td>
+       <td><input type="text" pattern="[a-zA-Z]{1,10}" required />
+       </td>
+       </tr>
+    <tr>
+    <td align="right">
+       학번 : </td>
+       <td><input type="number"  name ="student_number" placeholder="숫자를 입력하세요"  >
+       </td>
+       </tr>       
+    <tr><td align="right">
+        휴대폰 번호 : 
+        </td>
+        <td><input type="text" pattern="(010|011|016|019)-\d{3,4}-\d{4}" required placeholder="01x-123(4)-1234" >
+        </td>
+        <tr>
+        <td align="center" colspan="2">
+        <input type="submit" value="check" onclick="checks()">
+        <button type="button">버튼</button>
+        <button type="reset">리셋</button>
+         <button type="submit">제출</button>
+        </td>
+    </table>
+    </form>
+    <script>
+    function checks()
+    {
+    	if (document.inputform.checkValidity())
+    		document.inputform.submit();
+    	else
+    		{
+    		return false;
+    		}
+    }
+    </script>
+</body>
+</html>

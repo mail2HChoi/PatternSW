@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 예제</title>
+<script language=javascript>
+
+function go_check(){
+
+len = document.frm1.id.value;
+len2 = document.frm1.pw.value;
+
+if(len.length < 5){
+   alert("5글자 이상 작성하세요");
+   document.frm1.id.value = "";
+   document.frm1.id.focus();
+}
+else if(len2.substr(0,1)!="P"){
+   alert("비밀번호는 글자 P로 시작하세요");
+   document.frm1.pw.value = "";
+   document.frm1.pw.focus();
+}
+else 
+	document.frm1.submit();
+}
+
+</script>
+</head>
+
+<body>
+<div align="center">
+<h2>로그인 창 만들기</h2>
+<form name="frm1">
+<table border="1" >
+
+<tr>
+  <td align="right">아이디</td>
+  <td>&nbsp;<input type="text" name="id" size="10">
+</tr>
+
+<tr>
+  <td align="right">비밀번호</td>
+  <td>&nbsp;<input type="password" name="pw" size="20">
+</tr>
+
+</table>
+<br>
+<input type="button" value="확 인" onClick="go_check()">&nbsp;&nbsp;<input type="reset" value="취 소">
+</form>
+</div>
+</body>
+</html>

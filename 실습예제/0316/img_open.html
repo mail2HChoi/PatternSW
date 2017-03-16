@@ -1,0 +1,31 @@
+<HTML>
+	<HEAD>
+		<TITLE>작은 이미지 새 창 열어서 확대해 보기</TITLE>
+		<SCRIPT LANGUAGE="JavaScript">
+		<!--
+			function show_pic()
+			{
+				document.pre_view.src = document.all.select_pic.value;
+			}
+
+			function open_show()
+			{
+				window.open(document.all.select_pic.value, '', 'toolbars:none');
+			}
+		// -->
+		</script>
+	</HEAD>
+	<BODY>
+		<center>
+			<select name="select_pic"onclick="show_pic()">
+				<option value="pic1.jpg">이미지1
+				<option value="pic2.jpg">이미지2
+				<option value="pic3.jpg">이미지3
+				<option value="pic4.jpg">이미지4
+			</select>
+			<br><br>
+			<img name="pre_view"src="pic1.jpg"width=150 height=190 border=1> <br><br>
+			<input type=button value="확대"onclick="open_show()">
+		</center>
+	</BODY>
+</HTML>
