@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
-<script language="Javascript"src="members.js" charset="UTF-8"></script>
+<script language="JavaScript"src="members.js" charset="UTF-8"></script>
 </head>
 <body>
 	<form action="joinOk.jsp" method="post" name="reg_frm">
