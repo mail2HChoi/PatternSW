@@ -1,6 +1,6 @@
 <%@page import="java.sql.Timestamp"%>
 <%@page import="com.swpattern.ex.*"%>
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
+<%@ page language="java" contentType="text/html;charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <% request.setCharacterEncoding("EUC-KR"); %>
 <jsp:useBean id="dto" class="com.swpattern.ex.MemberDto"/>
@@ -8,6 +8,7 @@
 <%
 		dto.setrDate(new Timestamp(System.currentTimeMillis()));
 		MemberDao dao = MemberDao.getInstance();
+		System.out.println(dto.getId());
 		if(dao.confirmId(dto.getId()) == MemberDao.MEMBER_EXISTENT) {
 %>
 		<script language="javascript">
